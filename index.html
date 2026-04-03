@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿<!doctype html>
+=======
+<!doctype html>
+>>>>>>> 1120d043f98aba51b03a6b12c8d475a210be52bc
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -472,6 +476,49 @@
         );
       }
 
+<<<<<<< HEAD
+=======
+      /* ── SELLMIZE ── */
+      .smz {
+        background: linear-gradient(
+          135deg,
+          rgba(232, 98, 42, 0.06) 0%,
+          rgba(70, 28, 3, 0.16) 50%,
+          rgba(255, 255, 255, 0.015) 100%
+        );
+        border: 1px solid rgba(232, 98, 42, 0.18);
+        border-radius: 28px;
+        overflow: hidden;
+        position: relative;
+      }
+      .smz::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent 5%,
+          var(--or) 30%,
+          var(--orL) 70%,
+          transparent 95%
+        );
+      }
+      .smz::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 60% 50% at 80% 50%,
+          rgba(232, 98, 42, 0.05) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+>>>>>>> 1120d043f98aba51b03a6b12c8d475a210be52bc
       /* dashboard panels */
       .dpanel {
         background: rgba(0, 0, 0, 0.65);
@@ -860,6 +907,12 @@
         .hcol {
           display: none !important;
         }
+<<<<<<< HEAD
+=======
+        #smzg {
+          grid-template-columns: 1fr !important;
+        }
+>>>>>>> 1120d043f98aba51b03a6b12c8d475a210be52bc
         .pg3 {
           grid-template-columns: repeat(2, 1fr) !important;
         }
@@ -1254,6 +1307,7 @@
       </div>
     </section>
 
+<<<<<<< HEAD
     <!-- --- PROJECTS --- -->
     <section id="projects" class="sec">
       <div class="si">
@@ -1280,6 +1334,733 @@
                 "
               >
                 Projects
+              </h3>
+            </div>
+            <a
+              href="https://github.com/Akbarhusain12?tab=repositories"
+              target="_blank"
+              class="bo"
+              style="font-size: 0.8rem; padding: 9px 20px"
+              >All Projects ↗</a
+            >
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 20px;
+            "
+            class="pg3"
+          >
+            <!-- FySense AI -->
+            <div class="pcard fu">
+              <div
+                class="pthumb"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #1a0d02 0%,
+                    #2a0a1a 50%,
+                    #0d1a2a 100%
+                  );
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    z-index: 1;
+                  "
+                >
+                  <div style="display: flex; gap: 6px; margin-bottom: 4px">
+                    <div class="minibars">
+                      <div
+                        class="minibar"
+                        style="background: var(--or); height: 45%"
+                      ></div>
+                      <div
+                        class="minibar"
+                        style="background: var(--orL); height: 70%"
+                      ></div>
+                      <div
+                        class="minibar"
+                        style="background: var(--or); height: 55%"
+                      ></div>
+                      <div
+                        class="minibar"
+                        style="background: var(--orL); height: 90%"
+                      ></div>
+                      <div
+                        class="minibar"
+                        style="background: var(--or); height: 65%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.7rem;
+                      color: var(--orL);
+                      font-weight: 600;
+                      letter-spacing: 0.1em;
+                      text-transform: uppercase;
+                    "
+                  >
+                    Fashion AI · Visual Search
+                  </div>
+                </div>
+                <div
+                  class="pbadge"
+                  style="
+                    background: rgba(232, 98, 42, 0.2);
+                    border: 1px solid rgba(232, 98, 42, 0.3);
+                    color: var(--orL);
+                  "
+                >
+                  FashionTech
+                </div>
+              </div>
+              <div style="padding: 20px">
+                <h3
+                  style="
+                    font-size: 1.05rem;
+                    font-weight: 800;
+                    margin-bottom: 8px;
+                  "
+                >
+                  FySense AI
+                </h3>
+                <p
+                  style="
+                    color: var(--mut);
+                    font-size: 0.82rem;
+                    line-height: 1.55;
+                    margin-bottom: 14px;
+                  "
+                >
+                  Visual search engine (ResNet50) + RAG chatbot + aspect-based
+                  sentiment analysis on 40K+ fashion products.
+                </p>
+                <div style="margin-bottom: 16px">
+                  <span class="tn">TensorFlow</span
+                  ><span class="tn">ChromaDB</span><span class="tn">Gemini</span
+                  ><span class="tn">Flask</span>
+=======
+    <!-- ═══ SELLMIZE AI ═══ -->
+    <section id="projects" class="sec">
+      <div class="si">
+        <div class="fu" style="margin-bottom: 56px">
+          <div class="slbl">★ Featured Product</div>
+          <div
+            style="
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 16px;
+            "
+          >
+            <div>
+              <h2 class="stit">SellMize AI</h2>
+              <p
+                style="
+                  color: var(--or);
+                  font-size: 0.9rem;
+                  font-weight: 500;
+                  margin-top: 4px;
+                "
+              >
+                E-Commerce Intelligence Platform · In Active Development
+              </p>
+            </div>
+            <a
+              href="http://www.sellmize.me/"
+              target="_blank"
+              class="bo"
+              style="font-size: 0.8rem; padding: 9px 20px"
+              >Live ↗</a
+            >
+          </div>
+          <p class="sdesc" style="margin-top: 14px">
+            AI-powered SaaS platform for Amazon sellers — automating profit
+            analytics, inventory intelligence, and AI-driven business decisions
+            in real time.
+          </p>
+        </div>
+
+        <!-- hero product card -->
+        <div class="smz fu">
+          <div id="smzg" style="display: grid; grid-template-columns: 1fr 1fr">
+            <!-- LEFT: product story -->
+            <div style="padding: 44px 40px">
+              <div
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  background: rgba(232, 98, 42, 0.12);
+                  border: 1px solid rgba(232, 98, 42, 0.28);
+                  border-radius: 100px;
+                  padding: 6px 16px;
+                  font-size: 0.76rem;
+                  color: var(--orL);
+                  font-weight: 700;
+                  margin-bottom: 28px;
+                "
+              >
+                <span class="fb-dot"></span> Building · v0.9 beta
+              </div>
+
+              <h3
+                style="
+                  font-size: 1.85rem;
+                  font-weight: 900;
+                  margin-bottom: 14px;
+                  line-height: 1.1;
+                "
+              >
+                E-Commerce Intelligence<br />at Scale
+              </h3>
+              <p
+                style="
+                  color: var(--mut);
+                  font-size: 0.92rem;
+                  line-height: 1.7;
+                  margin-bottom: 30px;
+                "
+              >
+                Full-stack SaaS that replaces manual spreadsheet work with
+                real-time AI dashboards, automated data pipelines, and
+                LLM-powered business recommendations.
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  margin-bottom: 32px;
+                "
+              >
+                <div class="bul">
+                  Built <strong>full-stack system</strong> — Flask + PostgreSQL
+                  + Prophet time-series forecasting
+                </div>
+                <div class="bul">
+                  Automated <strong>CSV ingestion pipeline</strong> for orders,
+                  payments, and returns
+                </div>
+                <div class="bul">
+                  Integrated <strong>AI assistant</strong> — Groq LLaMA 3.1 +
+                  Tavily live web search
+                </div>
+                <div class="bul">
+                  <strong>Inventory manager</strong> with restock alerts and
+                  multi-warehouse shipment tracking
+                </div>
+                <div class="bul">
+                  <strong>Scalable SaaS backend</strong> with scheduled jobs,
+                  data retention and cleanup
+                </div>
+                <div class="bul">
+                  <strong>Real-time dashboard</strong> — 6 KPI cards, revenue
+                  charts, SKU-level analytics
+                </div>
+              </div>
+
+              <div style="margin-bottom: 32px; display: flex; flex-wrap: wrap">
+                <span class="tt">🐍 Python</span><span class="tt">⚗️ Flask</span
+                ><span class="tt">🗄️ PostgreSQL</span
+                ><span class="tt">📊 Pandas</span
+                ><span class="tt">📈 Prophet</span
+                ><span class="tt">🤖 LangChain</span
+                ><span class="tt">⚡ Groq API</span
+                ><span class="tt">🎨 Tailwind</span
+                ><span class="tt">☁️ Heroku</span>
+              </div>
+
+              <!-- impact -->
+              <div style="display: flex; flex-direction: column; gap: 9px">
+                <div class="imp">
+                  <svg
+                    class="impico"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                    <polyline points="17 6 23 6 23 12" />
+                  </svg>
+                  <strong style="color: var(--orL)">80% reduction</strong
+                  >&nbsp;in manual analysis time for sellers
+                </div>
+                <div class="imp">
+                  <svg
+                    class="impico"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                  </svg>
+                  Transforms raw seller data into actionable insights in seconds
+                </div>
+                <div class="imp">
+                  <svg
+                    class="impico"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8M12 17v4" />
+                  </svg>
+                  Built as scalable SaaS — subscription model, multi-tenant
+                  architecture
+>>>>>>> 1120d043f98aba51b03a6b12c8d475a210be52bc
+                </div>
+                <a
+                  href="https://github.com/Akbarhusain12/FySense-AI"
+                  target="_blank"
+                  class="bo"
+                  style="
+                    font-size: 0.77rem;
+                    padding: 8px 16px;
+                    width: 100%;
+                    justify-content: center;
+                  "
+                  >View Project ↗</a
+                >
+              </div>
+            </div>
+
+<<<<<<< HEAD
+            <!-- Churn Prediction -->
+            <div class="pcard fu2">
+              <div
+                class="pthumb"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #001a0d 0%,
+                    #0d1a02 50%,
+                    #1a0d00 100%
+                  );
+                "
+              >
+                <div
+                  style="
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+=======
+            <!-- RIGHT: live-style UI mockup -->
+            <div
+              style="
+                padding: 28px;
+                background: rgba(0, 0, 0, 0.4);
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                justify-content: center;
+              "
+            >
+              <!-- top bar -->
+              <div class="dpanel">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <div style="display: flex; align-items: center; gap: 8px">
+                    <div
+                      style="
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: var(--or);
+                        box-shadow: 0 0 8px var(--or);
+                      "
+                    ></div>
+                    <span
+                      style="
+                        font-family:
+                          &quot;Bricolage Grotesque&quot;, sans-serif;
+                        font-weight: 700;
+                        font-size: 0.9rem;
+                        color: var(--orL);
+                      "
+                      >SellMize Analytics</span
+                    >
+                  </div>
+                  <div style="display: flex; gap: 4px">
+                    <div
+                      style="
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                        background: #ff5f57;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                        background: #febc2e;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                        background: #28c840;
+                      "
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- KPI row -->
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 8px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <div class="kpi">
+                    <div class="kn">₹2.4L</div>
+                    <div class="kl">Revenue</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kn">68%</div>
+                    <div class="kl">Margin</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kn">1,204</div>
+                    <div class="kl">Orders</div>
+                  </div>
+                </div>
+
+                <!-- chart -->
+                <div
+                  style="
+                    background: rgba(0, 0, 0, 0.4);
+                    border-radius: 9px;
+                    padding: 13px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <div
+                      style="
+                        font-size: 0.66rem;
+                        color: var(--dim);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0.08em;
+                      "
+                    >
+                      Revenue vs Cost · 30d
+                    </div>
+                    <div
+                      style="
+                        font-size: 0.66rem;
+                        color: var(--or);
+                        font-weight: 600;
+                      "
+                    >
+                      ▲ 12.4%
+                    </div>
+                  </div>
+                  <div class="bwrap">
+                    <div class="bar" style="height: 44%"></div>
+                    <div class="bar" style="height: 60%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 78%"></div>
+                    <div class="bar barL" style="height: 55%"></div>
+                    <div class="bar" style="height: 86%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 93%"></div>
+                    <div class="bar barL" style="height: 65%"></div>
+                    <div class="bar" style="height: 82%"></div>
+                    <div class="bar" style="height: 74%"></div>
+                    <div class="bar" style="height: 88%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI assistant panel -->
+              <div class="dpanel">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 28px;
+                      height: 28px;
+                      border-radius: 8px;
+                      background: linear-gradient(
+                        135deg,
+                        var(--or),
+                        var(--orL)
+                      );
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 0.75rem;
+                    "
+                  >
+                    🤖
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 700;
+                      color: var(--orL);
+                    "
+                  >
+                    AI Assistant · LLaMA 3.1
+                  </div>
+                  <div
+                    style="
+                      margin-left: auto;
+                      font-size: 0.64rem;
+                      color: var(--dim);
+                    "
+                  >
+                    Just now
+                  </div>
+                </div>
+                <div
+                  style="
+                    background: rgba(232, 98, 42, 0.07);
+                    border: 1px solid rgba(232, 98, 42, 0.14);
+                    border-radius: 8px;
+                    padding: 11px;
+                    font-size: 0.75rem;
+                    color: var(--mut);
+                    line-height: 1.55;
+                  "
+                >
+                  "Your top SKU is underperforming in Maharashtra. Recommend
+                  increasing bids by
+                  <strong style="color: var(--orL)">12%</strong> for Q4 festive
+                  season based on 30-day trend analysis."
+                </div>
+              </div>
+
+              <!-- forecast + inventory row -->
+              <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px"
+              >
+                <div class="dpanel" style="padding: 14px">
+                  <div
+                    style="
+                      font-size: 0.65rem;
+                      color: var(--dim);
+                      text-transform: uppercase;
+                      letter-spacing: 0.07em;
+                      margin-bottom: 9px;
+                    "
+                  >
+                    Prophet Forecast
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: flex-end;
+                      gap: 3px;
+                      height: 42px;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(232, 98, 42, 0.15);
+                        border-radius: 2px 2px 0 0;
+                        height: 52%;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(232, 98, 42, 0.22);
+                        border-radius: 2px 2px 0 0;
+                        height: 65%;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(232, 98, 42, 0.3);
+                        border-radius: 2px 2px 0 0;
+                        height: 75%;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(232, 98, 42, 0.38);
+                        border-radius: 2px 2px 0 0;
+                        height: 85%;
+                        border: 1px solid rgba(232, 98, 42, 0.45);
+                      "
+                    ></div>
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(232, 98, 42, 0.45);
+                        border-radius: 2px 2px 0 0;
+                        height: 95%;
+                        border: 1px solid rgba(232, 98, 42, 0.6);
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.64rem;
+                      color: var(--dim);
+                      margin-top: 5px;
+                    "
+                  >
+                    Next 30 days ↑
+                  </div>
+                </div>
+                <div class="dpanel" style="padding: 14px">
+                  <div
+                    style="
+                      font-size: 0.65rem;
+                      color: var(--dim);
+                      text-transform: uppercase;
+                      letter-spacing: 0.07em;
+                      margin-bottom: 9px;
+                    "
+                  >
+                    Inventory Alert
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 5px">
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <span style="font-size: 0.68rem; color: var(--mut)"
+                        >SKU-A204</span
+                      >
+                      <span
+                        style="
+                          font-size: 0.66rem;
+                          color: #ef4444;
+                          font-weight: 600;
+                          background: rgba(239, 68, 68, 0.1);
+                          border-radius: 4px;
+                          padding: 1px 6px;
+                        "
+                        >LOW</span
+                      >
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <span style="font-size: 0.68rem; color: var(--mut)"
+                        >SKU-B118</span
+                      >
+                      <span
+                        style="
+                          font-size: 0.66rem;
+                          color: #22c55e;
+                          font-weight: 600;
+                          background: rgba(34, 197, 94, 0.1);
+                          border-radius: 4px;
+                          padding: 1px 6px;
+                        "
+                        >OK</span
+                      >
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <span style="font-size: 0.68rem; color: var(--mut)"
+                        >SKU-C055</span
+                      >
+                      <span
+                        style="
+                          font-size: 0.66rem;
+                          color: #f59e0b;
+                          font-weight: 600;
+                          background: rgba(245, 158, 11, 0.1);
+                          border-radius: 4px;
+                          padding: 1px 6px;
+                        "
+                        >RESTOCK</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── OTHER PROJECTS ── -->
+        <div style="margin-top: 72px">
+          <div
+            class="fu"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 36px;
+              flex-wrap: wrap;
+              gap: 14px;
+            "
+          >
+            <div>
+              <div class="slbl">More Projects</div>
+              <h3
+                style="
+                  font-size: 1.6rem;
+                  font-weight: 800;
+                  letter-spacing: -0.02em;
+                "
+              >
+                Other Work
               </h3>
             </div>
             <a
@@ -1431,6 +2212,7 @@
                     gap: 8px;
                   "
                 >
+>>>>>>> 1120d043f98aba51b03a6b12c8d475a210be52bc
                   <div style="display: flex; gap: 10px; align-items: flex-end">
                     <div style="font-size: 1.8rem">📉</div>
                     <div
