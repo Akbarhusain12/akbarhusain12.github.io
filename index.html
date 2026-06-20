@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,32 +12,11 @@
     />
     <style>
       :root {
-        --bg: #080400;
-        --bg2: #0e0600;
-        --bg3: #120800;
-        --bg-dark-1: rgba(5, 2, 0, 1);
-        --bg-dark-2: rgba(8, 4, 0, 1);
-        --bg-dark-3: rgba(2, 1, 0, 1);
-        --nav-bg: rgba(6, 3, 0, 0.96);
-        --panel-bg: rgba(0, 0, 0, 0.65);
-        --pthumb-grad: linear-gradient(180deg, transparent 40%, rgba(14, 7, 0, 0.9));
-        --or: #d85a24;
-        --or2: #e8782e;
-        --orL: #f0a060;
-        --orD: #c04a1a;
-        --card: rgba(255, 255, 255, 0.025);
-        --bdr: rgba(255, 140, 60, 0.1);
-        --bdrH: rgba(255, 140, 60, 0.38);
-        --tx: #ede4da;
-        --mut: #8a7060;
-        --dim: #4a3220;
-      }
-      body.light-mode {
         --bg: #f5f0ee;
         --bg2: #e8ddd8;
         --bg3: #ffffff;
         --bg-dark-1: #f5f0ee;
-        --bg-dark-2: #e8ddd8;
+        --bg-dark-2: #ece3de;
         --bg-dark-3: #e8ddd8;
         --nav-bg: rgba(245, 240, 238, 0.96);
         --panel-bg: rgba(255, 255, 255, 0.85);
@@ -98,6 +77,7 @@
         border: 1px solid var(--bdr);
         border-radius: 18px;
         backdrop-filter: blur(14px);
+        box-shadow: 0 2px 12px rgba(139, 37, 0, 0.06);
         transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
       }
       .card:hover {
@@ -135,13 +115,13 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: rgba(255, 255, 255, 0.04);
+        background: rgba(139, 37, 0, 0.08); 
         color: var(--tx);
         padding: 13px 28px;
         border-radius: 50px;
         font-weight: 600;
         font-size: 0.88rem;
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        border: 1px solid rgba(139, 37, 0, 0.25);
         cursor: pointer;
         transition: all 0.3s;
         text-decoration: none;
@@ -222,7 +202,7 @@
         color: var(--mut);
         font-size: 0.94rem;
         text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        border-bottom: 1px solid rgba(139, 37, 0, 0.08);
         transition: color 0.2s;
       }
       #mm a:hover {
@@ -253,22 +233,22 @@
         background:
           radial-gradient(
             ellipse 90% 80% at 70% 50%,
-            rgba(110, 38, 5, 0.32) 0%,
+            rgba(139, 37, 0, 0.08) 0%,
             transparent 65%
           ),
           radial-gradient(
             ellipse 50% 55% at 10% 65%,
-            rgba(65, 22, 3, 0.22) 0%,
+            rgba(139, 37, 0, 0.06) 0%,
             transparent 60%
           ),
           radial-gradient(
             ellipse 40% 45% at 90% 15%,
-            rgba(140, 52, 12, 0.14) 0%,
+            rgba(199, 54, 0, 0.06) 0%,
             transparent 55%
           ),
           radial-gradient(
             ellipse 60% 60% at 50% 100%,
-            rgba(50, 12, 0, 0.3) 0%,
+            rgba(139, 37, 0, 0.05) 0%,
             transparent 50%
           );
       }
@@ -276,8 +256,8 @@
         position: absolute;
         inset: 0;
         background-image:
-          linear-gradient(rgba(255, 140, 60, 0.025) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255, 140, 60, 0.025) 1px, transparent 1px);
+          linear-gradient(rgba(139, 37, 0, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(139, 37, 0, 0.06) 1px, transparent 1px);
         background-size: 72px 72px;
         mask-image: radial-gradient(
           ellipse 85% 85% at 50% 50%,
@@ -368,15 +348,15 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        background: rgba(20, 10, 2, 0.85);
-        border: 1px solid rgba(232, 98, 42, 0.28);
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(139, 37, 0, 0.18);
         border-radius: 10px;
         padding: 8px 13px;
         font-size: 0.76rem;
         font-weight: 600;
-        color: white;
+        color: #1a0a00;
         backdrop-filter: blur(10px);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 20px rgba(139, 37, 0, 0.1);
         z-index: 3;
         animation: fbob 3s ease-in-out infinite;
       }
@@ -432,13 +412,13 @@
 
       /* ── STATS ── */
       .sbar {
-        border-top: 1px solid rgba(255, 140, 60, 0.06);
-        border-bottom: 1px solid rgba(255, 140, 60, 0.06);
+        border-top: 1px solid rgba(139, 37, 0, 0.1);
+        border-bottom: 1px solid rgba(139, 37, 0, 0.1);
         padding: 32px 0;
         background: linear-gradient(
           180deg,
-          rgba(8, 4, 0, 0.98),
-          rgba(4, 2, 0, 1)
+          rgba(232, 221, 216, 0.6),
+          rgba(245, 240, 238, 0.8)
         );
       }
       .sn {
@@ -513,9 +493,9 @@
       .smz {
         background: linear-gradient(
           135deg,
-          rgba(232, 98, 42, 0.06) 0%,
-          rgba(70, 28, 3, 0.16) 50%,
-          rgba(255, 255, 255, 0.015) 100%
+          rgba(139, 37, 0, 0.04) 0%,
+          rgba(139, 37, 0, 0.08) 50%,
+          rgba(245, 240, 238, 0.5) 100%
         );
         border: 1px solid rgba(232, 98, 42, 0.18);
         border-radius: 28px;
@@ -552,9 +532,10 @@
       /* dashboard panels */
       .dpanel {
         background: var(--panel-bg);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(139, 37, 0, 0.12);
         border-radius: 14px;
         padding: 20px;
+        box-shadow: 0 2px 10px rgba(139, 37, 0, 0.04);
         transition: all 0.3s;
       }
       .dpanel:hover {
@@ -688,8 +669,8 @@
       }
       .tn {
         display: inline-block;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: rgba(139, 37, 0, 0.05);
+        border: 1px solid rgba(139, 37, 0, 0.15);
         color: var(--mut);
         border-radius: 6px;
         padding: 4px 11px;
@@ -700,10 +681,11 @@
 
       /* ── PROJECTS ── */
       .pcard {
-        background: rgba(255, 255, 255, 0.035);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: #ffffff;
+        border: 1px solid rgba(139, 37, 0, 0.12);
         border-radius: 20px;
         overflow: hidden;
+        box-shadow: 0 2px 16px rgba(139, 37, 0, 0.06);
         transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
       }
       .pcard:hover {
@@ -753,10 +735,11 @@
 
       /* ── SKILLS ── */
       .skcard {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: #ffffff;
+        border: 1px solid rgba(139, 37, 0, 0.12);
         border-radius: 18px;
         padding: 22px;
+        box-shadow: 0 2px 12px rgba(139, 37, 0, 0.05);
         transition: all 0.35s;
         display: flex;
         flex-direction: column;
@@ -786,8 +769,8 @@
       .stag {
         display: inline-flex;
         align-items: center;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: rgba(139, 37, 0, 0.05);
+        border: 1px solid rgba(139, 37, 0, 0.15);
         color: var(--mut);
         border-radius: 6px;
         padding: 3px 10px;
@@ -806,10 +789,11 @@
 
       /* ── EXPERIENCE ── */
       .ecard {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: #ffffff;
+        border: 1px solid rgba(139, 37, 0, 0.12);
         border-radius: 20px;
         padding: 30px;
+        box-shadow: 0 2px 12px rgba(139, 37, 0, 0.05);
         transition: all 0.3s;
         position: relative;
         overflow: hidden;
@@ -837,8 +821,8 @@
       /* ── CONTACT ── */
       .inp {
         width: 100%;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: rgba(139, 37, 0, 0.03);
+        border: 1px solid rgba(139, 37, 0, 0.18);
         border-radius: 11px;
         padding: 14px 18px;
         color: var(--tx);
@@ -848,7 +832,7 @@
         transition: all 0.25s;
       }
       .inp::placeholder {
-        color: rgba(90, 62, 42, 0.6);
+        color: rgba(139, 37, 0, 0.35);
       }
       .inp:focus {
         border-color: var(--or);
@@ -875,8 +859,8 @@
         width: 42px;
         height: 42px;
         border-radius: 11px;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(90, 62, 42, 0.6);
+        background: rgba(139, 37, 0, 0.05);
+        border: 1px solid rgba(139, 37, 0, 0.15);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -955,7 +939,7 @@
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
       }
-      /* Theme Toggle */
+      /* Theme Toggle - commented out (light theme only)
       .theme-btn {
         background: none;
         border: none;
@@ -969,6 +953,7 @@
       .theme-btn:hover {
         transform: scale(1.2) rotate(15deg);
       }
+      */
       /* specific anim classes for observer */
       .anim-sec {
         opacity: 0;
@@ -1101,7 +1086,7 @@
           <a class="nl" href="#experience">Experience</a>
           <a class="nl" href="#projects">Projects</a>
           <a class="nl" href="#contact">Contact</a>
-          <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">☀️</button>
+          <!-- <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">☀️</button> -->
           <a
             class="bo pulse-btn"
             href="https://drive.google.com/file/d/1aEcZv1qWxiQX7lw7cuc9JpKjy1Pl8Sv2/view?usp=sharing"
@@ -1199,20 +1184,41 @@
               </a>
             </div>
 
-                        <div
+            <div
               style="
                 display: flex;
                 gap: 20px;
                 flex-wrap: wrap;
                 padding: 20px;
-                background: rgba(255, 255, 255, 0.03);
-                border: 1px solid rgba(90, 62, 42, 0.6);;
+                background: #ffffff;
+                border: 1px solid rgba(139, 37, 0, 0.12);
                 border-radius: 16px;
                 max-width: 480px;
               "
             >
-              <div style="display: flex; align-items: center; gap: 10px">
-                <span style="font-size: 1.2rem">🎓</span>
+              <div style="display: flex; align-items: center; gap: 12px">
+                <div
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    background: linear-gradient(
+                      135deg,
+                      rgba(232, 98, 42, 0.15),
+                      rgba(232, 98, 42, 0.05)
+                    );
+                    border: 1px solid rgba(232, 98, 42, 0.2);
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                  </svg>
+                </div>
                 <div>
                   <div
                     style="
@@ -1237,10 +1243,31 @@
                 </div>
               </div>
               <div
-                style="width: 1px; background: rgba(255, 255, 255, 0.06)"
+                style="width: 1px; background: rgba(139, 37, 0, 0.12)"
               ></div>
-              <div style="display: flex; align-items: center; gap: 10px">
-                <span style="font-size: 1.2rem">📍</span>
+              <div style="display: flex; align-items: center; gap: 12px">
+                <div
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    background: linear-gradient(
+                      135deg,
+                      rgba(232, 98, 42, 0.15),
+                      rgba(232, 98, 42, 0.05)
+                    );
+                    border: 1px solid rgba(232, 98, 42, 0.2);
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
                 <div>
                   <div
                     style="
@@ -1265,10 +1292,30 @@
                 </div>
               </div>
               <div
-                style="width: 1px; background: rgba(255, 255, 255, 0.06)"
+                style="width: 1px; background: rgba(139, 37, 0, 0.12)"
               ></div>
-              <div style="display: flex; align-items: center; gap: 10px">
-                <span style="font-size: 1.2rem">⭐</span>
+              <div style="display: flex; align-items: center; gap: 12px">
+                <div
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    background: linear-gradient(
+                      135deg,
+                      rgba(232, 98, 42, 0.15),
+                      rgba(232, 98, 42, 0.05)
+                    );
+                    border: 1px solid rgba(232, 98, 42, 0.2);
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
                 <div>
                   <div
                     style="
@@ -1543,14 +1590,7 @@
               </div>
 
               <div style="margin-bottom: 32px; display: flex; flex-wrap: wrap">
-                <span class="tt">🐍 Python</span><span class="tt">⚡ FastAPI</span
-                ><span class="tt">🗄️ PostgreSQL</span
-                ><span class="tt">📈 Prophet</span
-                ><span class="tt">🤖 LangChain</span
-                ><span class="tt">📊 Chart.js</span
-                ><span class="tt">🧠 Agentic RAG</span
-                ><span class="tt">🧾 Groq LLaMA 3.1</span
-                ><span class="tt">🔄 Tavily</span>
+                <span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg> Python</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> FastAPI</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg> PostgreSQL</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> Prophet</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg> LangChain</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Chart.js</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Agentic RAG</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Groq LLaMA 3.1</span><span class="tt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Tavily</span>
               </div>
 
                             <div style="display: flex; flex-direction: column; gap: 9px">
@@ -1600,7 +1640,7 @@
                         <div
               style="
                 padding: 28px;
-                background: rgba(0, 0, 0, 0.4);
+                background: rgba(139, 37, 0, 0.04);
                 display: flex;
                 flex-direction: column;
                 gap: 14px;
@@ -1689,7 +1729,7 @@
 
                                 <div
                   style="
-                    background: rgba(0, 0, 0, 0.4);
+                    background: rgba(139, 37, 0, 0.04);
                     border-radius: 9px;
                     padding: 13px;
                   "
@@ -1765,7 +1805,13 @@
                       font-size: 0.75rem;
                     "
                 >
-                    🤖
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="10" rx="2"/>
+                      <circle cx="12" cy="5" r="2"/>
+                      <path d="M12 7v4"/>
+                      <line x1="8" y1="16" x2="8" y2="16"/>
+                      <line x1="16" y1="16" x2="16" y2="16"/>
+                    </svg>
                   </div>
                   <div
                     style="
@@ -2013,9 +2059,9 @@
                 style="
                   background: linear-gradient(
                     135deg,
-                    #1a0d02 0%,
-                    #2a0a1a 50%,
-                    #0d1a2a 100%
+                    #f5e8e0 0%,
+                    #f0e0ef 50%,
+                    #e0e8f5 100%
                   );
                 "
               >
@@ -2122,9 +2168,9 @@
                 style="
                   background: linear-gradient(
                     135deg,
-                    #001a0d 0%,
-                    #0d1a02 50%,
-                    #1a0d00 100%
+                    #e0f5e8 0%,
+                    #e8f5e0 50%,
+                    #f5e8e0 100%
                   );
                 "
               >
@@ -2137,8 +2183,11 @@
                     gap: 8px;
                   "
                 >
-                  <div style="display: flex; gap: 10px; align-items: flex-end">
-                    <div style="font-size: 1.8rem">📉</div>
+                  <div style="display: flex; gap: 10px; align-items: center">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/>
+                      <polyline points="17 18 23 18 23 12"/>
+                    </svg>
                     <div
                       style="
                         background: rgba(34, 197, 94, 0.15);
@@ -2147,7 +2196,7 @@
                         padding: 4px 10px;
                         font-size: 0.75rem;
                         font-weight: 700;
-                        color: #4ade80;
+                        color: #16a34a;
                       "
                     >
                       95% Accuracy
@@ -2156,7 +2205,7 @@
                   <div
                     style="
                       font-size: 0.7rem;
-                      color: rgba(74, 222, 128, 0.7);
+                      color: rgba(22, 163, 74, 0.8);
                       letter-spacing: 0.1em;
                       text-transform: uppercase;
                     "
@@ -2169,7 +2218,7 @@
                   style="
                     background: rgba(34, 197, 94, 0.12);
                     border: 1px solid rgba(34, 197, 94, 0.25);
-                    color: #4ade80;
+                    color: #16a34a;
                   "
                 >
                   Predictive ML
@@ -2221,9 +2270,9 @@
                 style="
                   background: linear-gradient(
                     135deg,
-                    #000a1a 0%,
-                    #0d0d1a 50%,
-                    #1a0a00 100%
+                    #e0e8f5 0%,
+                    #e8e8f5 50%,
+                    #f5e8e0 100%
                   );
                 "
               >
@@ -2247,10 +2296,11 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        font-size: 1rem;
                               "
                             >
-                              ⚡
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                              </svg>
                             </div>
                             <div
                               style="
@@ -2295,7 +2345,7 @@
                                 justify-content: center;
                                 font-size: 0.7rem;
                                 font-weight: 700;
-                                color: #4ade80;
+                                color: #16a34a;
                               "
                             >
                               ✓
@@ -2304,7 +2354,7 @@
                           <div
                             style="
                               font-size: 0.68rem;
-                              color: rgba(96, 165, 250, 0.7);
+                              color: rgba(37, 99, 235, 0.8);
                               letter-spacing: 0.1em;
                               text-transform: uppercase;
                             "
@@ -2317,7 +2367,7 @@
                           style="
                             background: rgba(96, 165, 250, 0.12);
                             border: 1px solid rgba(96, 165, 250, 0.25);
-                            color: #60a5fa;
+                            color: #2563eb;
                           "
                         >
                           Internship
@@ -2369,9 +2419,9 @@
                 style="
                   background: linear-gradient(
                     135deg,
-                    #1a1000 0%,
-                    #1a0a00 50%,
-                    #0d0800 100%
+                    #f5eee0 0%,
+                    #f5e8e0 50%,
+                    #f0e8e0 100%
                   );
                 "
               >
@@ -2384,8 +2434,11 @@
                     gap: 8px;
                   "
                 >
-                  <div style="display: flex; gap: 6px; align-items: center">
-                    <div style="font-size: 1.6rem">🏠</div>
+                  <div style="display: flex; gap: 8px; align-items: center">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                      <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
                     <div
                       style="
                         background: rgba(251, 191, 36, 0.12);
@@ -2394,7 +2447,7 @@
                         padding: 4px 10px;
                         font-size: 0.75rem;
                         font-weight: 700;
-                        color: #fbbf24;
+                        color: #b45309;
                       "
                     >
                       R² = 0.82
@@ -2403,7 +2456,7 @@
                   <div
                     style="
                       font-size: 0.68rem;
-                      color: rgba(251, 191, 36, 0.7);
+                      color: rgba(180, 83, 9, 0.8);
                       letter-spacing: 0.1em;
                       text-transform: uppercase;
                     "
@@ -2416,7 +2469,7 @@
                   style="
                     background: rgba(251, 191, 36, 0.1);
                     border: 1px solid rgba(251, 191, 36, 0.2);
-                    color: #fbbf24;
+                    color: #b45309;
                   "
                 >
                   Real Estate ML
@@ -2483,7 +2536,25 @@
               "
             >
               <div style="text-align: center">
-                <div style="font-size: 1.6rem; margin-bottom: 10px">🧑‍💻</div>
+                <div style="display: flex; justify-content: center; margin-bottom: 12px">
+                  <div
+                    style="
+                      width: 44px;
+                      height: 44px;
+                      background: rgba(232, 98, 42, 0.12);
+                      border: 1px solid rgba(232, 98, 42, 0.2);
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--or)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                  </div>
+                </div>
                 <p
                   style="
                     color: var(--mut);
@@ -2967,7 +3038,7 @@
             </div>
             <div
               style="
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                border-top: 1px solid rgba(139, 37, 0, 0.08);
                 padding-top: 13px;
                 font-size: 0.78rem;
                 color: var(--dim);
@@ -3016,8 +3087,8 @@
               <div style="text-align: right">
                 <div
                   style="
-                    background: rgba(255, 255, 255, 0.04);
-                    border: 1px solid rgba(90, 62, 42, 0.6);
+                    background: rgba(139, 37, 0, 0.05);
+                    border: 1px solid rgba(139, 37, 0, 0.12);
                     border-radius: 9px;
                     padding: 5px 14px;
                     font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
@@ -3037,7 +3108,7 @@
             </div>
             <div
               style="
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                border-top: 1px solid rgba(139, 37, 0, 0.08);
                 padding-top: 13px;
                 font-size: 0.78rem;
                 color: var(--dim);
@@ -3071,11 +3142,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 1.15rem;
                 flex-shrink: 0;
               "
             >
-              🏆
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                <path d="M4 22h16"/>
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/>
+                <path d="M12 2a6 6 0 0 1 6 6v3.5a6 6 0 0 1-12 0V8a6 6 0 0 1 6-6z"/>
+              </svg>
             </div>
             <div>
               <h4
@@ -3110,11 +3186,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 1.15rem;
                 flex-shrink: 0;
               "
             >
-              📓
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
             </div>
             <div>
               <h4
@@ -3166,7 +3244,12 @@
                 gap: 15px;
               "
             >
-              <div class="cico">✉️</div>
+              <div class="cico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
               <div>
                 <div
                   style="
@@ -3203,7 +3286,12 @@
                 gap: 15px;
               "
             >
-              <div class="cico">📱</div>
+              <div class="cico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+              </div>
               <div>
                 <div
                   style="
@@ -3237,7 +3325,12 @@
                 gap: 15px;
               "
             >
-              <div class="cico">📍</div>
+              <div class="cico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--or)">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
               <div>
                 <div
                   style="
@@ -3428,7 +3521,7 @@
 
     <footer class="bg-grad-3"
       style="
-        border-top: 1px solid rgba(255, 140, 60, 0.06);
+        border-top: 1px solid rgba(139, 37, 0, 0.1);
         padding: 44px 0 24px;
       "
     >
@@ -3513,7 +3606,7 @@
         </div>
         <div
           style="
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-top: 1px solid rgba(139, 37, 0, 0.08);
             padding-top: 22px;
             display: flex;
             justify-content: space-between;
@@ -3550,25 +3643,25 @@
       setTimeout(typeWriter, 400); // Trigger after slight load delay
 
       // Theme Toggle Logic
-      const themeToggle = document.getElementById('theme-toggle');
-      const body = document.body;
+      // const themeToggle = document.getElementById('theme-toggle');
+      // const body = document.body;
       
-      const currentTheme = localStorage.getItem('theme');
-      if (currentTheme === 'light') {
-        body.classList.add('light-mode');
-        themeToggle.textContent = '🌙';
-      }
+      // const currentTheme = localStorage.getItem('theme');
+      // if (currentTheme === 'light') {
+      //   body.classList.add('light-mode');
+      //   themeToggle.textContent = '🌙';
+      // }
       
-      themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        if (body.classList.contains('light-mode')) {
-          localStorage.setItem('theme', 'light');
-          themeToggle.textContent = '🌙';
-        } else {
-          localStorage.setItem('theme', 'dark');
-          themeToggle.textContent = '☀️';
-        }
-      });
+      // themeToggle.addEventListener('click', () => {
+      //   body.classList.toggle('light-mode');
+      //   if (body.classList.contains('light-mode')) {
+      //     localStorage.setItem('theme', 'light');
+      //     themeToggle.textContent = '🌙';
+      //   } else {
+      //     localStorage.setItem('theme', 'dark');
+      //     themeToggle.textContent = '☀️';
+      //   }
+      // });
 
       const nav = document.getElementById("nav");
       window.addEventListener("scroll", () => {
